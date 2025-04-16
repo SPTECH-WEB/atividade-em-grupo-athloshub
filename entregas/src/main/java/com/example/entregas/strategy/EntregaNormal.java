@@ -3,10 +3,10 @@ package com.example.entregas.strategy;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EntregaTransportadora implements EntregaStrategy {
+public class EntregaNormal implements EntregaStrategy {
     @Override
     public double calcular(double peso) {
-        return 10; //Aqui você substitui pelo o que precisar do adapter
+        return (peso * 0.5) + 10;
     }
 
     @Override

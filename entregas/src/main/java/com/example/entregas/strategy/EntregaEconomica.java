@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class EntregaEconomica implements EntregaStrategy {
     @Override
     public double calcular(double peso){
-        return peso*0.9+10;
+        return (peso*0.8)+2;
     }
 
     @Override
