@@ -1,9 +1,11 @@
 package com.example.entregas.model;
 import jakarta.persistence.*;
+import lombok.*;
 
 
 @Entity
 @Table(name = "Pedido")
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
 public class Pedido {
 
     @Id
