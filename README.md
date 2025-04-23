@@ -73,6 +73,33 @@ Content-Type: application/json
 
 3. Verifique no console os logs de notificação, integração e cálculo de frete.
 
+
+---
+
+## 🌐 Endpoints disponíveis
+
+A API REST expõe os seguintes endpoints para interação com o módulo de entregas:
+
+| Método | Rota         | Descrição |
+|--------|--------------|-----------|
+| `GET`  | `/pedidos`   | Retorna uma lista com todos os pedidos cadastrados no sistema. |
+| `POST` | `/pedidos`   | Registra um novo pedido de entrega. O corpo da requisição deve conter os dados do pedido no formato JSON. |
+
+### Exemplo de uso do endpoint `POST /pedidos`
+
+```http
+POST /pedidos
+Content-Type: application/json
+
+{
+  "cliente": "Maria",
+  "produto": "Notebook",
+  "peso": 5.0,
+  "tipoEntrega": "transportadora"
+}
+```
+
+
 ---
 
 ## 👥 Integrantes do grupo
